@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # Movie-Reviews-APP
 =======
 # README
 =======
 # MovieReviewsApp
->>>>>>> 7acdb7c (Updated Readme)
 
 MovieReviewsApp is a Ruby on Rails application for managing movies and their reviews. This application allows you to import movie and review data from CSV files, display a list of movies, search for movies by actor, and sort movies by their average rating.
 
@@ -32,11 +30,7 @@ Ensure you have the following installed:
     git clone https://github.com/your-username/MovieReviewsApp.git
     cd MovieReviewsApp
     ```
-
-<<<<<<< HEAD
-* ...
->>>>>>> 8def7f0 (Initial commit)
-=======
+    
 2. **Install dependencies**:
 
     ```bash
