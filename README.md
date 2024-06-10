@@ -27,10 +27,10 @@ Ensure you have the following installed:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/MovieReviewsApp.git
+    git clone https://github.com/3bsalam/MovieReviewsApp.git
     cd MovieReviewsApp
     ```
-    
+
 2. **Install dependencies**:
 
     ```bash
