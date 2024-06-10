@@ -8,7 +8,7 @@ namespace :import do
       Movie.create(
         title: row['Movie'].presence || 'Unknown Title',
         release_year: row['Year'].presence || 0,
-        genre: row['Description'].presence || 'Unknown Genre',
+        description: row['Description'].presence || 'Unknown Description',
         director: row['Director'].presence || 'Unknown Director',
         actor: row['Actor'].presence || 'Unknown Actor'
       )
