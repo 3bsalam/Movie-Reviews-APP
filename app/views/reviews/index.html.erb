@@ -1,0 +1,22 @@
+<h1>Reviews</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Movie</th>
+      <th>User</th>
+      <th>Rating</th>
+      <th>Review</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @reviews.each do |review| %>
+      <tr>
+        <td><%= review.movie.title %></td>
+        <td><%= review.user %></td>
+        <td><%= review.rating %></td>
+        <td><%= review.review_text %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
