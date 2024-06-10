@@ -1,0 +1,30 @@
+<h1>Movies</h1>
+
+<%= form_with(url: movies_path, method: :get, local: true) do %>
+  <%= label_tag :search, 'Search by actor:' %>
+  <%= text_field_tag :search, params[:search] %>
+  <%= submit_tag 'Search' %>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th class="title">Title</th>
+      <th class="release_year">Release Year</th>
+      <th class="genre">Genre</th>
+      <th class="director">Director</th>
+      <th class="actor">Actor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @movies.each do |movie| %>
+      <tr>
+        <td class="title"><%= movie.title %></td>
+        <td class="release_year"><%= movie.release_year %></td>
+        <td class="genre description"><%= movie.genre %></td>
+        <td class="director"><%= movie.director %></td>
+        <td class="actor"><%= movie.actor %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
